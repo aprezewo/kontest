@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+	id="Manual"
+	stylesheets="@style.css"
+	alignment="CENTER"
+	
+>
+	<HBox spacing="50">
+		<VBox spacing="20" alignment="CENTER">
+			<Label styleClass="plainText" wrapText="true" >
+				Dies ist ein Konzentrationstest. Der Spieler wird mit 10 Symbolen konfrontiert, denen entweder die Taste '1' oder die Taste '0' zugeordnet ist.
+				Ein Pfeil zeigt an, welches Symbol gerade aktiv ist. Der Nutzer drückt die Taste, welche zu dem aktiven Symbol gehört, und der Pfeil rutscht ein Symbol weiter. 
+				Ist die Reihe von 10 Symbolen abgearbeitet, so erscheint eine neue Reihe. 
+			</Label>
+			<Label styleClass="plainText" wrapText="true" >
+				Der Test dauert 6 Minuten. Das Ziel ist es, möglichst viele Symbole richtig zu bearbeiten. Die Auswertung wird jedoch erst nach Ablauf der 6 Minuten gezeigt. 
+				Im folgenden sind die Symbole mit ihren Zuordnungen zu sehen:
+			</Label>
+		</VBox>
+		<GridPane hgap="10" vgap="10" fx:id="grid" ></GridPane>
+	</HBox>
+	
+	<Button cancelButton="true" onAction="#End">Press ESC to leave</Button>
+</VBox>
+

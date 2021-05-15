@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+	id="Result"
+	stylesheets="@style.css"
+	alignment="CENTER_LEFT"
+>
+
+	<Label>-----------------------}} FINISHED {{-----------------------</Label>
+	<Label fx:id="successLabel" />	
+	
+	<GridPane vgap="20" hgap="20">
+		<Label fx:id="hitLabel" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+		<Label fx:id="missLabel" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+		<Label fx:id="sumLabel" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+		<Label fx:id="hitPercLabel" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+	</GridPane>
+	
+	<Label fx:id="infoLabel" />
+	<Label>-------------------------------------------------------------</Label>
+	<Region prefHeight="40" />
+	<Button cancelButton="true" onAction="#toMainMenu">To exit press ESC.</Button>
+</VBox>
+

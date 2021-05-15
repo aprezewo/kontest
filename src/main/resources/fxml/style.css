@@ -1,0 +1,46 @@
+
+.root {
+	-fx-background-color: black;
+	-fx-padding: 50;
+}
+
+VBox,HBox {
+	-fx-spacing: 13;
+}
+
+Label {
+	-fx-background-color: transparent;
+	-fx-text-fill: white;
+	-fx-font-size: 20px;
+}
+
+Button {
+	-fx-background-color: transparent;
+	-fx-text-fill: white;
+	-fx-font-size: 20px;
+}
+
+Button:focused{
+	-fx-background-color: radial-gradient(center 50% 50% ,radius 40%,rgba(255,255,255,0.5),transparent);
+}
+
+#MainMenu > Button {
+	-fx-font-size: 30px;
+}
+
+.plainText{
+	-fx-font-size: 15px;
+}
+
+/* Textfield for entering numbers, up to 3 digits */
+.numField {
+	-fx-max-width: 40px;
+}
+
+#Config Slider{
+	-fx-max-width: 250px;
+	-fx-show-tick-labels: true;
+	-fx-show-tick-marks: true;
+	-fx-snap-to-ticks: true;
+	-fx-snap-to-pixel: false;
+}

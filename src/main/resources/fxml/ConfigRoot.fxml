@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+	id="Config"
+	stylesheets="@style.css"
+	alignment="CENTER"
+>
+	<VBox alignment="CENTER_LEFT">
+		<Label>Signs per Row</Label>
+		<Slider fx:id="signsPerRowSlider" 
+		
+			blockIncrement="1" 
+			majorTickUnit="1"
+			minorTickCount="0"
+			min="1"
+			max="10">
+		</Slider>
+		
+		<Label>Signvariations</Label>
+		<Slider fx:id="signVariationsSlider" 
+		
+			blockIncrement="1" 
+			majorTickUnit="1"
+			minorTickCount="0"
+			min="1"
+			max="8"></Slider>
+			
+		<Label>Duration</Label>
+		<HBox alignment="CENTER_LEFT">
+			<TextField fx:id="durationMinField" id="durationMinField" styleClass="numField"></TextField>
+			<Label>min</Label>
+			<TextField fx:id="durationSecField" id="durationSecField" styleClass="numField"></TextField>
+			<Label>sec</Label>
+		</HBox>
+		
+		
+		<Label>Minimum Hit Sum</Label>
+		<TextField fx:id="minHitSumField" styleClass="numField"></TextField>
+		
+		<Label>Minimum Hit Percentage</Label>
+		<TextField fx:id="minHitPercentageField" styleClass="numField"></TextField>
+	</VBox>
+	
+	<Button cancelButton="true" onAction="#End">Press ESC to leave</Button>
+	
+</VBox>

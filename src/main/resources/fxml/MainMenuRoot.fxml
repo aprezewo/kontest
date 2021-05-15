@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+	id="MainMenu"
+	alignment="CENTER"
+	stylesheets="@style.css"
+>
+
+	<Button prefWidth="300" onAction="#play">Start</Button>
+	<Button prefWidth="300" onAction="#configuration">Configuration</Button>
+	<Button prefWidth="300" onAction="#manual">Manual</Button>
+	<Button prefWidth="300" onAction="#exit" cancelButton="true">Exit</Button>
+
+</VBox>
+
