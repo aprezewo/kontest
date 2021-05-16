@@ -12,6 +12,8 @@ Executables can be found under this link, using the password below. Builds are m
 -Linux
 -MacOS
 
+For Windows, the program is available via a Microsoft Installer executable (.msi).
+
 https://nextcloud05.webo.cloud/s/rcbyL44R3YNmH5j
 password: II27aT!{
 
